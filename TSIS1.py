@@ -79,3 +79,16 @@ x = int(x)
 #Exercise 3
 x = 5
 x = complex(x)
+
+#Python strings
+
+#Exercise 1
+x = "Hello World"
+print(len(x))
+#Exercise 2
+#Exercise 3
+#Exercise 4
+#Exercise 5
+#Exercise 6
+#Exercise 7
+#Exercise 8
