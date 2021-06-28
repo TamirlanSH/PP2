@@ -137,3 +137,163 @@ if 5 != 10:
 #Exercise 5
 if 5 == 10 or 4 == 4:
     print("At least one of the statements is true")
+
+#Python Lists
+
+#Exercise 1 (print second item)
+fruits = ["apple", "banana", "cherry"]
+print(fruits[1])
+#Exercise 2 replace
+fruits = ["apple", "banana", "cherry"]
+fruits[0] = "kiwi"
+#Exercise 3 add
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+#Exercise 4 insert (num) after this num insert
+fruits = ["apple", "banana", "cherry"]
+fruits.insert(1, "lemon")
+#Exercise 5 remove some ele
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+#Exercise 6 last item
+fruits = ["apple", "banana", "cherry"]
+print(fruits[-1])
+#Exercise 7 third, fourth, fifth
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruits[2:5])
+#Exercise 8 length
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))
+
+#Python Tuples
+
+#Exercise 1
+fruits = ("apple", "banana", "cherry")
+print(fruits[0])
+#Exercise 2 numbers
+fruits = ("apple", "banana", "cherry")
+print(len(fruits))
+#Exercise 3 last item
+fruits = ("apple", "banana", "cherry")
+print(fruits[-1])
+#Exercise 4 third, fourth, fifth
+fruits = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(fruits[2:5])
+
+#Python Sets
+
+#Exercise 1 check apple in set
+fruits = {"apple", "banana", "cherry"}
+if "apple" in fruits:
+    print("Yes, apple is a fruit")
+#Exercise 2 add orange in set
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+#Exercise 3 Unite fruits and more fruits
+fruits = {"apple", "banana", "cherry"}
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)
+#Exercise 4 remove banana if it's exists
+fruits = {"apple", "banana", "cherry"}
+fruits.remove("banana")
+#Exercise 5 remove banana anyway
+fruits = {"apple", "banana", "cherry"}
+fruits.discard("banana")
+
+#Python Dictionaries
+
+#Exercise 1 value of model
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(car.get("model"))
+#Exercise 2 change year
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car["year"] = 2020
+#Exercise 3 add color with value
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car["color"] = "red"
+#Exercise 4 delete model
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car.pop("model")
+#Exercise 5 clear dict
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car.clear()
+
+#Python If...Else
+
+#Exercise 1
+a = 50
+b = 10
+if a > b:
+    print("Hello World")
+#Exercise 2
+a = 50
+b = 10
+if a != b:
+    print("Hello World")
+#Exercise 3
+a = 50
+b = 10
+if a == b:
+    print("Yes")
+else:
+    print("No")
+#Exercise 4
+a = 50
+b = 10
+if a == b:
+    print("1")
+elif a > b:
+    print("2")
+else:
+    print("3")
+#Exercise 5
+c = 30
+d = 30
+if a == b and c == d:
+    print("Hello")
+#Exercise 6
+if a == b or c == d:
+    print("Hello")
+#Exercise 7 TAB
+if 5 > 2:
+    print("Five is greater than two!")
+#Exercise 8 one line short form
+if 5 > 2: print("Five is greater than two!")
+#Exercise 9 if else short form
+print("Yes") if 5 > 2 else print("No")
+
+#Python While Loops
+
+#Exercise 1
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+#Exercise 2
+i = 1
+while i < 6:
+    if i == 3:
+        break
+    i += 1    
+#Exercise 3
+#Exercise 4
