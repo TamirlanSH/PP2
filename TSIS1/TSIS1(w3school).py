@@ -296,4 +296,121 @@ while i < 6:
         break
     i += 1    
 #Exercise 3
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
 #Exercise 4
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than than 6")
+
+#Python For Loops
+
+#Exercise 1
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+#Exercise 2
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
+#Exercise 3
+for x in range(6):
+    print(x)
+#Exercise 4
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        break
+    print(x)
+
+#Python Functions
+
+#Exercise 1
+def my_function():
+    print("Hello from a function")
+#Exercise 2
+def my_function():
+    print("Hello from a function")
+
+my_function()
+#Exercise 3
+def my_function(fname, lname):
+    print(fname)
+#Exercise 4
+def my_function(x):
+    return x + 5
+#Exercise 5 input 
+def my_function(*kids):
+    print("The youngest child is " + kids[2])
+#Exercise 6
+def my_function(**kid):
+    print("His last name is " + kid["lname"])
+
+#Python Lambda
+
+#Exercise 1
+x = lambda a: a
+
+#Python Classes
+
+#Exercise 1
+class MyClass:
+    x = 5
+#Exercise 2
+class MyClass:
+    x = 5
+
+p1 = MyClass()
+#Exercise 3
+class MyClass:
+    x = 5
+
+p1 = MyClass()
+
+print(p1.x)
+#Exercise 4
+class Person:
+    def __init__(self, name,age):
+        self.name = name
+        self.age = age
+
+#Python Inheritance
+
+#Exercise 1 Person - parent, student child
+class Student(Person):
+    pass
+#Exercise 2
+class Person:
+  def __init__(self, fname):
+    self.firstname = fname
+
+  def printname(self):
+    print(self.firstname)
+
+class Student(Person):
+  pass
+
+x = Student("Mike")
+x.printname()
+
+#Python Modules
+
+#Exercise 1
+import mymodule
+#Exercise 2
+import mymodule as mx
+#Exercise 3
+import mymodule
+
+print(dir(mymodule))
+#Exercise 4
+from mymodule import person1
