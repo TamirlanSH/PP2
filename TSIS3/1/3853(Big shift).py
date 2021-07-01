@@ -4,7 +4,12 @@ for i in range(len(a)):
     b.append(int(a[i]))
 
 k = int(input())
-
-m = 0
-for i in range(k):
-    b[0] = 3
+k = k % len(b)
+if k > 0:
+    k = abs(k)
+    print(*b[k-1:], end=" ")
+    print(*b[0:k-1])
+if k <= 0:
+    k = abs(k)
+    print(*b[-k:], end=" ")
+    print(*b[0:-k])
